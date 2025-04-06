@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import Link from "next/link";
 import {
   TextCaseConverter,
   UrlEncoderDecoder,
@@ -50,7 +51,7 @@ export default function ToolPage(props: any) {
     <main className="min-h-screen bg-gray-50 text-gray-800">
       <header className="bg-white shadow">
         <div className="max-w-5xl mx-auto px-4 py-6 flex justify-between items-center">
-          <a href="/" className="text-2xl font-bold text-blue-600">My Tool Hub</a>
+          <Link href="/" className="text-2xl font-bold text-blue-600">My Tool Hub</Link>
         </div>
       </header>
       <section className="max-w-3xl mx-auto px-4 py-12">
